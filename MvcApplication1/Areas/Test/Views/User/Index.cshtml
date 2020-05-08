@@ -1,0 +1,10 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@{
+	ViewBag.Title = "";
+}
+<h2>Test.User.Index</h2>
+<h2>这是一个用户界面 @ViewBag.SubDomain</h2>
+<p id="p1">
+	@Html.ActionLink("返回", "Index", "Web", new { area = "www" }, null, true)
+</p>

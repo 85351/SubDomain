@@ -1,0 +1,22 @@
+﻿@{
+	ViewBag.Title = "home.index";
+}
+<h2>@ViewBag.Message</h2>
+<p id="p1">
+	To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+	<br />
+	<br />
+</p>
+<hr />
+<p>
+	@{
+		var list = ViewData["list"] as List<KeyValuePair<int, int>>;
+		if (list != null)
+		{
+			foreach (var item in list)
+			{
+		<text>@item.Key : @item.Value</text><br />
+			}
+		}
+	}
+</p>
